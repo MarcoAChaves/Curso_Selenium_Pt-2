@@ -8,4 +8,9 @@ public class MenuPage extends BasePage {
         clicarLink("Contas");
         clicarLink("Adicionar");
     }
+
+    public void acessarTelaListaConta() {
+        clicarLink("Contas");
+        clicarLink("Listar");
+    }
 }
