@@ -6,23 +6,23 @@ import org.openqa.selenium.By;
 
 public class LoginPage extends BasePage {
 
-    public void acessarTelaInicial(){
-        DriverFactory.getDriver().get("https://seubarriga.wcaquino.me/login ");
+    public void acessarTelaInicial() {
+        DriverFactory.getDriver().get("https://seubarriga.wcaquino.me/login");
     }
 
-    public void setEmail(String email){
+    public void setEmail(String email) {
         escrever("email", email);
     }
 
-    public void setSenha (String senha){
-    escrever("senha", senha);
+    public void setSenha(String senha) {
+        escrever("senha", senha);
     }
 
-    public void entrar(){
+    public void entrar() {
         clicarBotao(By.xpath("//button[.='Entrar']"));
     }
 
-    public void logar(String email, String senha){
+    public void logar(String email, String senha) {
         setEmail(email);
         setSenha(senha);
         entrar();
