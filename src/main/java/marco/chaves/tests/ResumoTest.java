@@ -11,7 +11,7 @@ public class ResumoTest extends BaseTest {
     private ResumoPage resumoPage = new ResumoPage();
 
     @Test
-    public void testExcluirMovimentacao(){
+    public void testExcluirMovimentacao() {
         menuPage.acessarTelaResumo();
         resumoPage.excluirMovimentacao();
 

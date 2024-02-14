@@ -2,7 +2,6 @@ package marco.chaves.page;
 
 import marco.chaves.core.BasePage;
 import marco.chaves.core.DriverFactory;
-import org.openqa.selenium.By;
 
 public class LoginPage extends BasePage {
 

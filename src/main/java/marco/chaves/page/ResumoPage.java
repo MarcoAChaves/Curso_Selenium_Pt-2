@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 public class ResumoPage extends BasePage {
 
-    public void excluirMovimentacao(){
+    public void excluirMovimentacao() {
         clicarBotao(By.xpath("//span[@class='glyphicon glyphicon-remove-circle']"));
     }
 

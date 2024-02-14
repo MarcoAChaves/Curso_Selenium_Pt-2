@@ -18,7 +18,7 @@ public class MovimentacaoTest extends BaseTest {
     private MovimentacaoPage movPage = new MovimentacaoPage();
 
     @Test
-    public void testInserirMovimentacao(){
+    public void testInserirMovimentacao() {
         menuPage.acessarTelaInserirMovimentacao();
 
         movPage.setDataMovimentacao(obterDataFormatada(new Date()));
@@ -34,10 +34,10 @@ public class MovimentacaoTest extends BaseTest {
     }
 
     @Test
-    public void testeCamposObrigatorios(){
+    public void testeCamposObrigatorios() {
         menuPage.acessarTelaInserirMovimentacao();
         movPage.salvar();
-        List<String>erros  = movPage.obterErros();
+        List<String> erros = movPage.obterErros();
         Assert.assertTrue(erros.containsAll(Arrays.asList(
                 "Data da Movimentação é obrigatório", "Data do pagamento é obrigatório",
                 "Descrição é obrigatório", "Interessado é obrigatório",
@@ -46,7 +46,7 @@ public class MovimentacaoTest extends BaseTest {
     }
 
     @Test
-    public void testInserirMovimentacaoFutura(){
+    public void testInserirMovimentacaoFutura() {
         menuPage.acessarTelaInserirMovimentacao();
 
         Date dataFutura = DataUtils.obterDataComDiferencaDias(5);
@@ -60,7 +60,7 @@ public class MovimentacaoTest extends BaseTest {
         movPage.setStatusPago();
         movPage.salvar();
 
-        List<String>erros  = movPage.obterErros();
+        List<String> erros = movPage.obterErros();
         Assert.assertTrue(erros.contains("Data da Movimentação deve ser menor ou igual à data atual"));
         Assert.assertEquals(1, erros.size());
     }

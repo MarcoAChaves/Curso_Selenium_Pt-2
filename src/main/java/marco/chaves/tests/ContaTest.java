@@ -44,7 +44,7 @@ public class ContaTest extends BaseTest {
     }
 
     @Test
-    public void testExcluirContaComMovimentacao(){
+    public void testExcluirContaComMovimentacao() {
         menuPage.acessarTelaListaConta();
         contasPage.clicarExcluirConta("Conta do Teste alterada");
         Assert.assertEquals("Conta em uso na movimentações", contasPage.obterMensagemErro());
