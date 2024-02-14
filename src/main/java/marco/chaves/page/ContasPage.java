@@ -10,12 +10,13 @@ public class ContasPage extends BasePage {
     }
 
     public void salvar() {
-        clicarBotao(By.xpath("//button[.='Salvar']"));
+        clicarBotaoPorTexto("Salvar");
     }
 
     public String obterMensagemSucesso() {
         return obterTexto(By.xpath("//div[@class='alert alert-success']"));
     }
+
     public String obterMensagemErro() {
         return obterTexto(By.xpath("//div[@class='alert alert-danger']"));
     }
