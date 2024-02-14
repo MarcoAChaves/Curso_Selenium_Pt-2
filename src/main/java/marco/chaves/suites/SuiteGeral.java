@@ -10,7 +10,8 @@ import org.junit.runners.Suite;
         MovimentacaoTest.class,
         RemoverMovimentacaoContaTest.class,
         SaldoTest.class,
-        ResumoTest.class})
+        ResumoTest.class,
+ExcluirContaFinalTest.class})
 
 public class SuiteGeral {
 }
