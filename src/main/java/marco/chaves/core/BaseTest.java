@@ -12,6 +12,7 @@ import org.openqa.selenium.TakesScreenshot;
 import java.io.File;
 import java.io.IOException;
 
+import static marco.chaves.core.DriverFactory.*;
 import static marco.chaves.core.DriverFactory.getDriver;
 import static marco.chaves.core.DriverFactory.killDriver;
 

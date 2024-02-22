@@ -13,6 +13,6 @@ public class SaldoTest extends BaseTest {
     @Test
     public void testSaldoConta(){
         menu.acessarTelaPrincipal();
-        Assert.assertEquals("500.00", page.obterSaldoConta("Conta de Teste alterada"));
+        Assert.assertEquals("534.00", page.obterSaldoConta("Conta para saldo"));
     }
 }
